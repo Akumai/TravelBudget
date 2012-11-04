@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TravelBudget</string>
+    <string name="title_screen">Travel Budget</string>
+    <string name="new_travel_btn">New Travel</string>
+    <string name="old_travel_btn">View recent travels</string>
+    <string name="new_travel_screen">New Travel</string>
+    <string name="recent_travel_screen">Recent travels</string>
 </resources>
