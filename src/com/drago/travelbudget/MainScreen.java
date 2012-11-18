@@ -1,17 +1,11 @@
 package com.drago.travelbudget;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.View;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.Toast;
-
-import java.util.EventObject;
 
 public class MainScreen extends Activity {
-    public static int counter = 0;
     /**
      * Called when the activity is first created.
      */
@@ -22,11 +16,11 @@ public class MainScreen extends Activity {
     }
 
     public void newTravelBtn_Click(View v){
-        Button b = new Button(MainScreen.this);
+        setContentView(R.layout.new_travel_screen);
+    }
 
-        b.setText("Button " + counter++);
-        b.setWidth(200);
-        b.setHeight(30);
-        b.buildLayer();
+    public void oldTravelBtn_Click(View v){
+        Intent intent = new Intent(this, RecentTravelActivity.class);
+        startActivity(intent);
     }
 }
