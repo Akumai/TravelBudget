@@ -6,4 +6,6 @@
     <string name="old_travel_btn">View recent travels</string>
     <string name="new_travel_screen">New Travel</string>
     <string name="recent_travel_screen">Recent travels</string>
+    <string name="btn_add_friend">Add</string>
+    <string name="new_travel_save_btn">Save</string>
 </resources>

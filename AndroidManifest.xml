@@ -13,10 +13,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RecentTravelActivity"
-                android:label="@string/recent_travel_screen">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                    android:value="com.drago.travelbudget.MainScreen"/>
-                </activity>
-        <activity android:name=".NewTravelActivity"/>
+                  android:label="@string/recent_travel_screen"/>
+        <activity android:name=".NewTravelActivity"
+                  android:label="@string/new_travel_screen"/>
     </application>
 </manifest>

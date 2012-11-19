@@ -1,0 +1,4 @@
+<resources>
+    <string name="new_travel_name_label">Enter the name of you travel</string>
+    <string name="new_travel_person_name_label">Enter the name of your friend</string>
+</resources>

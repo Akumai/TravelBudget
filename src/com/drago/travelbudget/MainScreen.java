@@ -16,7 +16,8 @@ public class MainScreen extends Activity {
     }
 
     public void newTravelBtn_Click(View v){
-        setContentView(R.layout.new_travel_screen);
+        Intent intent = new Intent(this, NewTravelActivity.class);
+        startActivity(intent);
     }
 
     public void oldTravelBtn_Click(View v){

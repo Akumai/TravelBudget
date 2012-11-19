@@ -8,7 +8,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/title_screen"/>
-            <!--android:textColor="@color/title_color"-->
     <Button android:text="@string/new_travel_btn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
