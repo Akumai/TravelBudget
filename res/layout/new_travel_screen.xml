@@ -35,7 +35,7 @@
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent">
             <LinearLayout
-                    android:id="@+id/friends_list"
+                    android:id="@+id/friends_layout"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
                     android:orientation="vertical">
@@ -52,7 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="@string/new_travel_save_btn"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:onClick="newTravelSave_Click"/>
             </RelativeLayout>
 
 </RelativeLayout>
