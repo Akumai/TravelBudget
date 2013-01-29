@@ -3,7 +3,9 @@ package com.drago.travelbudget;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -24,11 +26,11 @@ public class NewTravelActivity extends Activity {
 
     public void newTravelAddFriend_Click(View v){
         EditText friendsName = (EditText) findViewById(R.id.friend_name);
-        friendsName.setText(EMPTY_STRING);
         String newFriendsName = friendsName.getText().toString().trim();
         if (newFriendsName.equals(EMPTY_STRING)){
             return;
         }
+        friendsName.setText(EMPTY_STRING);
         friendsList.add(newFriendsName);
         LinearLayout friendsLayout = (LinearLayout) findViewById(R.id.friends_layout);
         LinearLayout row = new LinearLayout(this);
@@ -37,16 +39,16 @@ public class NewTravelActivity extends Activity {
         TextView tv = new TextView(this);
         tv.setText(newFriendsName);
         row.addView(tv);
-//        Button removeBtn = new Button(this);
-//        removeBtn.setText(R.string.new_travel_remove_btn_label);
-//        removeBtn.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 4f));
-//        removeBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Log.w("DragoLog", "RemoveClicked");
-//            }
-//        });
-//        row.addView(removeBtn);
+        Button removeBtn = new Button(this);
+        removeBtn.setText(R.string.new_travel_remove_btn_label);
+        removeBtn.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 4f));
+        removeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.w("DragoLog", "RemoveClicked " + view.getId());
+            }
+        });
+        row.addView(removeBtn);
         // Adding new friends name to the top of the list
         friendsLayout.addView(row, 0);
     }
